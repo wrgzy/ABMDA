@@ -331,7 +331,7 @@ for xx in dataSet:
     if (xx[0],xx[1]) in known:
         y.append(1)
     else:
-        y.append(0)                                     
+        y.append(-1)                                     
 ys=numpy.array(y)
 clf1=tree.DecisionTreeClassifier(max_depth=9,min_samples_leaf=5)
 clf1=clf1.fit(x,y,sample_weight=D)
